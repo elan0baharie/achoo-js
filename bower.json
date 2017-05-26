@@ -1,0 +1,17 @@
+{
+  "name": "achoo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Elan Baharie <0elan1@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
