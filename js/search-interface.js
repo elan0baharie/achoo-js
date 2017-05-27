@@ -5,6 +5,7 @@ $(document).ready(function(){
   $('#searchForm').submit(function(e){
     e.preventDefault();
     var medicalIssue = $('#userTxt').val();
-    var newSearch = new Search(medicalIssue);
+    var newSearch = new Search();
+    newSearch.getDoctors(medicalIssue);
   });
 })
