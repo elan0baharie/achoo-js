@@ -5,13 +5,16 @@ function Doctors (){
 }
 
 arrayBuild = function(arr){
-  var array = arr['data']
-  $('#resultTxt').text(JSON.stringify(array))
-  for(var i = 0; i < 20; i++) {
-    var doctor = array[i]
-    $('#result3Txt').append("<p>"+ JSON.stringify(doctor) + "</p>");
-  };
-}
+  console.log(arr.data.length);
+  var doctorArray = arr.data;
+
+  for(var i = 0; i < arr.data.length; i++) {
+    var doctor = doctorArray[i];
+    var test = doctor.practices;
+    console.log(JSON.stringify(test));
+    $('#result3Txt').append("<p>"+ JSON.stringify(doctor) + "</p><br>");
+  }
+};
 
 
 Doctors.prototype.getDoctors = function(medicalIssue) {
