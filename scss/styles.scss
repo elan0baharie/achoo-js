@@ -1,0 +1,45 @@
+$darkBlue : #0086b3;
+$medBlue : #0099cc;
+$lightBlue : #ccf2ff;
+
+$lightDarkBlue : #ccddff;
+$medDarkBlue : #003399;
+$darkDarkBlue : #003cb3;
+
+img {
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+ul li {
+  margin-left: 8px;
+}
+
+body {
+  background-color: #e6ffff;
+}
+
+h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.address {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  background-color: $lightDarkBlue;
+  color: $darkDarkBlue;
+  border-radius: 5px;
+  border: 2px solid $medDarkBlue;
+}
+
+.bio {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+  background-color: $lightBlue;
+  color: $darkBlue;
+  border-radius: 5px;
+  border: 2px solid $medBlue;
+  margin-bottom: 10px;
+}
