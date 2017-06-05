@@ -25,6 +25,7 @@ arrayBuild = function(arr){
     var lastName = doctor.profile.last_name;
     var bio = doctor.profile.bio;
     var picture = doctor.profile.image_url;
+    console.log(doctor.practices.length);
     if(doctor.practices.length > 0) {
       for(var j = 0; j < doctor.practices.length;  j++) {
         var street = doctor.practices[j].visit_address.street;
@@ -39,18 +40,6 @@ arrayBuild = function(arr){
         };
         address = addressHash;
       }
-    } else {
-      var street = doctor.practices[0].visit_address.street;
-      var city = doctor.practices[0].visit_address.city;
-      var state = doctor.practices[0].visit_address.state;
-      var zip = doctor.practices[0].visit_address.zip;
-      var addressHash = {
-        street: street,
-        city: city,
-        state: state,
-        zip: zip
-      };
-      address = addressHash;
     }
 
     var newDoc = new Doctors(firstName, lastName, picture, bio, address);
